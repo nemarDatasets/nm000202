@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "P300 dataset BI2012 from a \"Brain Invaders\" experiment",
+  "description": "This dataset comprises electroencephalographic (EEG) recordings from 25 healthy subjects performing a visual P300 brain-computer interface task inspired by the Space Invaders video game. Participants were presented with visual flashes of alien groups while 16-channel EEG was recorded at 128 Hz, with the objective of detecting target versus non-target stimuli. The dataset includes both training and online sessions with a total of 128 target trials and 640 non-target trials per subject, providing a benchmark resource for P300-based BCI research and algorithm development.",
+  "methods_description": "EEG data were acquired from 25 subjects using 16 electrodes (F7, F3, F4, F8, T7, C3, Cz, C4, T8, P7, P3, Pz, P4, P8, O1, O2) in a standard 10-20 montage at a sampling rate of 128 Hz using NeXus-32 hardware (MindMedia/TMSi) with OpenVibe software. The experiment employed a visual P300 paradigm with repetitive flashing of alien groups (12 groups of 6 aliens, 12 flashes per repetition with 2 targets and 10 non-targets). Participants were instructed to silently count target flashes while minimizing eye blinks and head movements. Data were recorded with a hardware common average reference and ground at FZ, with wet silver/silver chloride electrodes.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "G.F.P. Van Veen": {},
     "A. Barachant": {},
@@ -9,6 +14,33 @@
     "P. Rodrigues": {},
     "M. Congedo": {}
   },
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "Brain-Computer Interface"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "Visual Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D014796"
+    },
+    {
+      "term": "motor imagery"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.5281/zenodo.2649006",
@@ -36,14 +68,11 @@
       "relation_type": "References"
     }
   ],
-  "title": "P300 dataset BI2012 from a \"Brain Invaders\" experiment",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "57.0 MB (26 files)"
   ],
@@ -55,29 +84,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises electroencephalographic (EEG) recordings from 25 healthy subjects performing a visual P300 brain-computer interface task inspired by the Space Invaders video game. Participants viewed sequences of flashing alien groups and silently counted target stimuli while 16-channel EEG was recorded at 128 Hz. The dataset includes both training and online sessions with performance-dependent feedback, providing a benchmark resource for P300-based BCI research and algorithm development.",
-  "methods_description": "EEG data were acquired from 16 electrodes (F7, F3, F4, F8, T7, C3, Cz, C4, T8, P7, P3, Pz, P4, P8, O1, O2) using a NeXus-32 amplifier (MindMedia/TMSi) at 128 Hz sampling rate with hardware common average reference and FZ ground. The visual P300 paradigm presented 36 aliens in 12 groups of 6, with 12 flashes per repetition (2 target, 10 non-target). Participants completed a training session (8 repetitions, 128 target and 640 non-target trials) and an online session with three difficulty levels. Stimulus presentation was synchronous with visual feedback through the game interface.",
-  "keywords": [
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "Brain-Computer Interface"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
-      "term": "Visual Stimulation"
-    }
-  ],
-  "source_hash": "45b3124d15d0bef26e1a7390e93ea3e5d1c1cf33d54d09f499e9702616e73ade"
+  "source_hash": "50a29708b8f6309a4da124d6a75b2064b47fed99bfa87ff99953109eafb3d712"
 }
