@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "P300 dataset BI2012 from a \"Brain Invaders\" experiment",
-  "description": "EEG recordings from 25 healthy volunteers playing Brain Invaders, a visual P300 brain-computer interface modeled on the video game Space Invaders. Data were recorded from 16 electrodes at GIPSA-lab, Grenoble, in 2012, using a training-test design with Target and NonTarget flashes of alien groups. The dataset supports P300 detection and BCI classification benchmarking.",
-  "methods_description": "16-channel wet Ag/AgCl EEG was recorded with a NeXus-32 amplifier (MindMedia/TMSi) at 128 Hz using OpenVibe, with a hardware common average reference and ground at FZ. Participants viewed 36 aliens flashing in 12 groups of 6, with 12 flashes per repetition (2 Target, 10 non-Target). The training session comprised 8 Targets with 8 repetitions each (128 Target and 640 non-Target trials), followed by an online session with three levels of distractor configurations.",
+  "description": "EEG recordings from 25 healthy volunteers playing Brain Invaders, a visual P300 brain-computer interface inspired by the video game Space Invaders. Data were recorded with 16 electrodes at GIPSA-lab (Grenoble, France) in 2012. The design combines a training session with online sessions of varying distractor configurations, with Target and NonTarget flash events.",
+  "methods_description": "EEG was recorded with a NeXus-32 amplifier (MindMedia/TMSi) at 128 Hz from 16 wet Ag/AgCl electrodes (10-20 layout) using OpenVibe, with a hardware common average reference and ground at FZ. In the training session, a Target alien was chosen randomly on each repetition: 8 Targets with 8 repetitions each gave 128 Target and 640 non-Target flashes. Each repetition consisted of 12 flashes of groups of 6 aliens (2 Target, 10 non-Target). The online session had three levels with different distractor configurations, counter-balanced across subjects.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,21 +21,21 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "P300"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Event-related potentials"
+      "term": "P300"
     },
     {
-      "term": "visual stimulation"
+      "term": "event-related potentials"
     },
     {
       "term": "Brain Invaders"
+    },
+    {
+      "term": "visual stimulation"
     }
   ],
   "related_identifiers": [
@@ -81,5 +81,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "50a29708b8f6309a4da124d6a75b2064b47fed99bfa87ff99953109eafb3d712"
+  "source_hash": "da37d43383154cdec1694e8ad417fa7d622adb817687553a42cec2a52273639b"
 }
